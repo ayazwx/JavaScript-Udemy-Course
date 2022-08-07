@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var b1 = Boolean(80);
+var b2 = Boolean(2.86);
+var b3 = Boolean(-10);
+var b4 = Boolean("Hi");
+var b5 = Boolean('false');
+var b6 = Boolean(1 + 8 + 10.14);
+var b7 = Boolean(0);
+
+document.getElementById("demo").innerHTML =
+"80 is " + b1 + "<br>" +
+"2.86is " + b2 + "<br>" +
+"-10 is " + b3 + "<br>" +
+"Any (not empty) string is " + b4 + "<br>" +
+"The string 'false' is " + b5 + "<br>" +
+"Any expression (except zero) is " + b6 + "<br>" +
+"zero is " + b7;
+
+</script>
+
+</body>
+</html>

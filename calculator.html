@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+
+<body>
+
+	<script type="text/javascript" src="calc.js"></script>
+
+    <b>claculator</b>
+    <form method="poat">
+        <table>
+            <tr>
+                <td>Enter first number: </td>
+                <td><input type="number" id="math" name="first" size="15"></td>
+            </tr>
+            <tr>
+                <td>Enter Second number: </td>
+                <td><input type="number" id="math" name="second" size="15"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="+" onclick="plus(this.form)">
+                    <input type="button" value="*" onclick="multiplication(this.form)">
+                    <input type="button" value="/" onclick="division(this.form)">
+                    <input type="button" value="-" onclick="subtraction(this.form)">
+                </td>
+            </tr>                
+            <tr>
+                <td>Result is: </td>
+                <td><input type="text" name="total" size="20"></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <p id="demo"></p>
+    
+    <script>
+	var x="This is ";
+	var y="Calculator....";
+	var z = x + y
+	document.getElementById("demo").innerHTML = z;
+	</script>
+	
+</body>
+</html>

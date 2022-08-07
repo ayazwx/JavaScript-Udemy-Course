@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Fruits</h3>
+<p id="fruits"></p><br>
+
+<h3>POP</h3>
+<p id="pop"></p><br>
+
+<h3>PUSH</h3>
+<p id="push"></p><br>
+
+<h3>SHIFT</h3>
+<p id="shift"></p><br>
+
+<h3>UNSHIFT</h3>
+<p id="unshift"></p><br>
+
+<h3>SPLICE</h3>
+<p id="splice"></p><br>
+
+<script>
+var fruits = ["Kiwi", "Orange", "pear", "Grape", "Tangerine", "Mango", "Banana"];
+fruits[0] = "Apple";
+delete fruits[7];
+document.getElementById("fruits").innerHTML = fruits.join(" * ");
+
+var fruits1 = ["Apple", "Orange", "pear", "Grape", "Tangerine", "Mango"];
+fruits1.pop();
+document.getElementById("pop").innerHTML = fruits1.join(" * ");
+
+var fruits2 = ["Apple", "Orange", "pear", "Grape", "Tangerine", "Mango"];
+fruits2.push("Cherry");
+document.getElementById("push").innerHTML = fruits2.join(" * ");
+
+var fruits3 = ["Apple", "Orange", "pear", "Grape", "Tangerine", "Mango"];
+fruits3.shift();
+document.getElementById("shift").innerHTML = fruits3.join(" * ");
+
+var fruits4 = ["Apple", "Orange", "pear", "Grape", "Tangerine", "Mango"];
+fruits4.unshift("Cherry");
+document.getElementById("unshift").innerHTML = fruits4.join(" * ");
+
+var fruits5 = ["Apple", "Orange", "pear", "Grape", "Tangerine", "Mango"];
+fruits5.splice(2, 0, "Lemon", "Banana");
+document.getElementById("splice").innerHTML = fruits5.join(" * ");
+
+</script>
+
+
+
+
+</body></html>
